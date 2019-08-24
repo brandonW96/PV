@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/css/base.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<body>
+	<h1>Your Results</h1>
+	<h2>A web based application for people to break out of their political bubbles</h2>
+	{{#each top10nyt}}
+		<div align="left">
+			{{#each this.article}}
+				title: {{this.title}}
+				author: {{this.author}}
+				source: {{this.source}}
+				pvalue: {{this.pvalue}}
+				content: {{this.content}}
+			{{/each}}
+	{{/each}}
+		</div>
+	{{#each top10econ}}
+		<div align="center">
+			{{#each this.article}}
+				title: {{this.title}}
+				author: {{this.author}}
+				source: {{this.source}}
+				pvalue: {{this.pvalue}}
+				content: {{this.content}}
+			{{/each}}
+	{{/each}}
+		</div>
+	{{#each top10wp}}
+		<div align="right">
+			{{#each this.article}}
+				title: {{this.title}}
+				author: {{this.author}}
+				source: {{this.source}}
+				pvalue: {{this.pvalue}}
+				content: {{this.content}}
+			{{/each}}
+	{{/each}}
+		</div>
+</body>
+</html>
